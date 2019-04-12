@@ -11,6 +11,7 @@ import org.apache.hadoop.util.RunJar;
  * 数据二次排序：secondary-sort.txt、secondary-sort2.txt
  * 倒排索引：README.txt
  * 二度好友关系发现CommonFriends：relation.txt
+ * 自定义输出格式LogStatistics：visit.log
  */
 public class Starter {
     public static void main(String[] args) throws Throwable {
@@ -23,7 +24,7 @@ public class Starter {
          */
         String[] parmas = new String[]{
                 "E:/project/mapreduce-test/mapreduce-test.jar",
-                "com.hikdata.CommonFriends",
+                "com.hikdata.LogStatistics",
                 "input/*",
                 "output/"
         };
